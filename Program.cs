@@ -12,6 +12,7 @@ namespace IgoorIdentity
         public static void Main(string[] args)
         {
             var host = new WebHostBuilder()
+                .UseUrls("http://+:7777")
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
